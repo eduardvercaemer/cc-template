@@ -1,0 +1,24 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.jj": true,
+        "**/.vscode": true,
+        "**/.cache": true,
+        "**/build": true,
+    },
+    "clangd.arguments": [
+        "--log=verbose",
+        "--pretty",
+        "--background-index",
+        "--compile-commands-dir=build",
+    ],
+    "[cpp]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnSaveMode": "modificationsIfAvailable",
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    },
+}
